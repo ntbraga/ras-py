@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "postinstall": "pip install -r requirements.txt",
+        "deploy": "serverless deploy",
+        "deploy-debug": "set SLS_DEBUG=* && npm run deploy",
+        "update-dependencies": "pur -r requirements.txt",
+        "create-venv": "virtualenv ven",
+        "active-venv": "./atmus-venv/Scripts/activate",
+        "remove-venv": "rm -rf atmus-venv/",
+        "leave-venv": "deactivate"
+    },
+    "dependencies": {
+        "serverless-python-requirements": "^5.0.1"
+    }
+}
